@@ -1,0 +1,44 @@
+name: Update_gendloopTemplates
+
+permissions:
+  contents: write
+  actions: write
+
+on: 
+  workflow_dispatch:
+  schedule:
+    - cron: '0 16 * * 0'
+
+jobs:
+  update_gendloopTemplates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: update-gendloopTemplates
+        uses: gendloop/repository-dispatch@v1.0.0
+        with:
+          token: ${{ secrets.GENDLOOP_ACCESS_TOKEN }}
+          repo: 'gendloopTemplates'
+          workflow: Get_Repos_By_Topics
+          params: '{"ref":"v1.0.1","inputs":{"topics":"topic:template"}}'
+
+      - name: get-time
+        run: |
+          echo "CURRENT_TIME=$(date + "%Y-%m-%d %H:%M:%S")" >> $GITHUB_ENV
+          echo $CURRENT_TIME
+
+      - name: record-run-time
+        run: |
+          file="log.md"
+          if [ -f $file ]; then
+            echo "$file already exists";
+          else
+            echo "" > $file;
+            echo "create new file: $file";
+          fi
+          sed -i "1s/^/$(echo "${CURRENT_TIME}: run workflow " | sed 's/\//\\\//g'`${{ github.workflow }}` \n\n/" $file
+
+      - name: git-push
+        uses: gendloop/git-push@v1.0.0
+        with:
+          token: ${{ secrets.GENDLOOP_ACCESS_TOKEN }}
+          commit: "chore: run workflow \\`${{ github.workflow }}\\` "
