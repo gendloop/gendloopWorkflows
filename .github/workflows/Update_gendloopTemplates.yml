@@ -19,7 +19,7 @@ jobs:
           token: ${{ secrets.GENDLOOP_ACCESS_TOKEN }}
           repo: 'gendloopTemplates'
           workflow: Get_Repos_By_Topics
-          params: '{"ref":"v1.0.1","inputs":{"topics":"topic:template"}}'
+          params: '{"ref":"main","inputs":{"topics":"topic:template"}}'
 
       - name: get-time
         run: |
