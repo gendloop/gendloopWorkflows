@@ -1,4 +1,4 @@
-name: Create_New_App_Installer
+name: New_App_Installer
 
 permissions:
   contents: write
@@ -26,7 +26,7 @@ on:
           - 'template-gendloopAppInstallerV'
 
 jobs:
-  create_new_app_installer:
+  new_app_installer:
     runs-on: ubuntu-latest
     steps:
       - name: checkout-repo

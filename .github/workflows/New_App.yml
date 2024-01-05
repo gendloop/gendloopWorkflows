@@ -1,4 +1,4 @@
-name: Create_New_Action
+name: New_App
 
 permissions:
   contents: write
@@ -18,14 +18,15 @@ on:
       template_repo:
         description: 'Template Repo Name'
         required: false
-        default: 'template-gendloopAction'
+        default: 'template-gendloopAppR'
         type: choice
         options:
-          - 'template-gendloopAction'
-
+          - 'template-gendloopAppR'
+          - 'template-gendloopApp'
+          - 'template-gendloopAppV'
 
 jobs:
-  create_new_action:
+  new_app:
     runs-on: ubuntu-latest
     steps:
       - name: checkout-repo
@@ -53,7 +54,7 @@ jobs:
         with:
           token: ${{ secrets.GENDLOOP_ACCESS_TOKEN }}
           repo: ${{ inputs.repo_name }}
-          topics: '"action"'
+          topics: '"app"'
 
       - name: get-time
         run: |

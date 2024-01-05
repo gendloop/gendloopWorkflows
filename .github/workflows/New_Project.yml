@@ -1,4 +1,4 @@
-name: Create_New_Project
+name: New_Project
 
 permissions:
   contents: write
@@ -24,7 +24,7 @@ on:
           - 'template-gendloopProject'
 
 jobs:
-  create_new_project:
+  new_project:
     runs-on: ubuntu-latest
     steps:
       - name: checkout-repo
