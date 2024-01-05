@@ -1,4 +1,4 @@
-name: Update_gendloopActions
+name: Update_Templates
 
 permissions:
   contents: write
@@ -7,22 +7,22 @@ permissions:
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 16 * * 0'
+    - cron: '45 16 * * 0'
 
 jobs:
-  update_gendloopActions:
+  update_Templates:
     runs-on: ubuntu-latest
     steps:
       - name: checkout-repo
         uses: actions/checkout@v3
 
-      - name: update-gendloopActions
+      - name: update-gendloopTemplates
         uses: gendloop/repository-dispatch@v1.0.0
         with:
           token: ${{ secrets.GENDLOOP_ACCESS_TOKEN }}
-          repo: 'gendloopActions'
+          repo: 'gendloopTemplates'
           workflow: Get_Repos_By_Topics
-          params: "'{\"ref\":\"main\",\"inputs\":{\"topics\":\"topic:action\"}}'"
+          params: "'{\"ref\":\"main\",\"inputs\":{\"topics\":\"topic:template\"}}'"
 
       - name: get-time
         run: |

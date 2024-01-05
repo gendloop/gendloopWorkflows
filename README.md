@@ -4,9 +4,9 @@
 [![New_App](https://github.com/gendloop/gendloopWorkflows/actions/workflows/New_App.yml/badge.svg)](https://github.com/gendloop/gendloopWorkflows/actions/workflows/New_App.yml)
 [![New_App_Installer](https://github.com/gendloop/gendloopWorkflows/actions/workflows/New_App_Installer.yml/badge.svg)](https://github.com/gendloop/gendloopWorkflows/actions/workflows/New_App_Installer.yml)
 [![New_Project](https://github.com/gendloop/gendloopWorkflows/actions/workflows/New_Project.yml/badge.svg)](https://github.com/gendloop/gendloopWorkflows/actions/workflows/New_Project.yml)
-[![Update_gendloopActions](https://github.com/gendloop/gendloopWorkflows/actions/workflows/Update_gendloopActions.yml/badge.svg)](https://github.com/gendloop/gendloopWorkflows/actions/workflows/Update_gendloopActions.yml)
-[![Update_gendloopApps](https://github.com/gendloop/gendloopWorkflows/actions/workflows/Update_gendloopApps.yml/badge.svg)](https://github.com/gendloop/gendloopWorkflows/actions/workflows/Update_gendloopApps.yml)
-[![Update_gendloopProjects](https://github.com/gendloop/gendloopWorkflows/actions/workflows/Update_gendloopProjects.yml/badge.svg)](https://github.com/gendloop/gendloopWorkflows/actions/workflows/Update_gendloopProjects.yml)
-[![Update_gendloopTemplates](https://github.com/gendloop/gendloopWorkflows/actions/workflows/Update_gendloopTemplates.yml/badge.svg)](https://github.com/gendloop/gendloopWorkflows/actions/workflows/Update_gendloopTemplates.yml)
+[![Update_Actions](https://github.com/gendloop/gendloopWorkflows/actions/workflows/Update_Actions.yml/badge.svg)](https://github.com/gendloop/gendloopWorkflows/actions/workflows/Update_Actions.yml)
+[![Update_Apps](https://github.com/gendloop/gendloopWorkflows/actions/workflows/Update_Apps.yml/badge.svg)](https://github.com/gendloop/gendloopWorkflows/actions/workflows/Update_Apps.yml)
+[![Update_Projects](https://github.com/gendloop/gendloopWorkflows/actions/workflows/Update_Projects.yml/badge.svg)](https://github.com/gendloop/gendloopWorkflows/actions/workflows/Update_Projects.yml)
+[![Update_Templates](https://github.com/gendloop/gendloopWorkflows/actions/workflows/Update_Templates.yml/badge.svg)](https://github.com/gendloop/gendloopWorkflows/actions/workflows/Update_Templates.yml)
 
 gendloop's workflows
