@@ -25,9 +25,8 @@ on:
           - 'template-gendloopApp'
           - 'template-gendloopAppV'
 
-
 jobs:
-  create_new_action:
+  create_new_app:
     runs-on: ubuntu-latest
     steps:
       - name: checkout-repo
