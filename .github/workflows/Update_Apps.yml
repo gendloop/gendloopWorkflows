@@ -11,7 +11,7 @@ concurrency:
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 16 * * 0'
+    - cron: '15 16 1 * *'
 
 jobs:
   update_apps:
