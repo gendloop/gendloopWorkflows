@@ -58,7 +58,7 @@ jobs:
         with:
           token: ${{ secrets.GENDLOOP_ACCESS_TOKEN }}
           repo: ${{ inputs.repo_name }}
-          topics: '"app"'
+          topics: '"app","portable"'
 
       - name: get-time
         run: |
