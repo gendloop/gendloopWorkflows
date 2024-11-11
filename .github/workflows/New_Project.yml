@@ -26,6 +26,7 @@ on:
         type: choice
         options:
           - 'template-gendloopProject'
+          - 'template-GitbookProject'
 
 jobs:
   new_project:
