@@ -27,6 +27,7 @@ on:
         options:
           - 'template-gendloopProject'
           - 'template-GitbookProject'
+          - 'template-SlidesProject'
 
 jobs:
   new_project:
